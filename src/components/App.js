@@ -1,13 +1,16 @@
 import React from 'react'
 
 import '../assets/css/App.css'
+import Header from './Header'
+
 
 function App() {
   return (
     <div>
       <h1>Hello, Electron!</h1>
 
-      <p>I hope you enjoy using basic-electron-react-boilerplate to start your dev off right!</p>
+      <p>hello this is raj</p>
+      <Header/>
     </div>
   )
 }
