@@ -5,6 +5,7 @@ const Header = () => {
   return (
     <div className = 'header'>
       this is also a test
+      <h1>this is all this app does </h1>
     </div>
    );
 }
