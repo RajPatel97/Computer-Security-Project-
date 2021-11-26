@@ -1,0 +1,8 @@
+.PN-wrapper{
+    display: flex;
+    justify-content: center;    
+}
+
+.lable{
+    font-size: large;
+}

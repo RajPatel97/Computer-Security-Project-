@@ -1,6 +1,7 @@
 import React from 'react'
 
 import '../assets/css/App.css'
+import Button from './Button'
 import Header from './Header'
 
 
@@ -11,6 +12,8 @@ function App() {
 
 
       <Header/>
+      <Button/>
+      
     </div>
   )
 }
