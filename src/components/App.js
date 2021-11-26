@@ -9,7 +9,7 @@ function App() {
     <div>
       <h1>Hello, Electron!</h1>
 
-      <p>hello this is raj</p>
+
       <Header/>
     </div>
   )
