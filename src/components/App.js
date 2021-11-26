@@ -1,8 +1,8 @@
 import React from 'react'
 
 import '../assets/css/App.css'
-import Button from './Button'
 import Header from './Header'
+import PhoneNumber from './PhoneNumber'
 
 
 function App() {
@@ -12,8 +12,8 @@ function App() {
 
 
       <Header/>
-      <Button/>
-      
+      <PhoneNumber/>
+
     </div>
   )
 }
