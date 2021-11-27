@@ -8,9 +8,6 @@ import PhoneNumber from './PhoneNumber'
 function App() {
   return (
     <div>
-      <h1>Hello, Electron!</h1>
-
-
       <Header/>
       <PhoneNumber/>
 

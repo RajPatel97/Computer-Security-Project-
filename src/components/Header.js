@@ -4,8 +4,14 @@ import '../assets/css/Header.css'
 const Header = () => {
   return (
     <div className = 'header'>
-      this is also a test
-      <h1>this is all this app does </h1>
+    <h1 className="title">LOG-TEXT</h1>
+
+      <div className="item-wrappers">
+        <div className="item">HOME</div>
+        <div className="item">LOG</div>
+        <div className="item">SETTINGS</div>
+      </div>
+
     </div>
    );
 }

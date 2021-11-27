@@ -1,3 +1,30 @@
 .header{
-  color:aquamarine
+  display: grid;
+  grid-template-rows: auto auto;
+  background-color: #314455;
+  margin:0;
+  border-style: solid;
+  border-color: #97aabd;
 }
+
+.title{
+  display: flex;
+  justify-content: center;
+}
+
+.item-wrappers{
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.item{
+  display: flex;
+  justify-content: center;
+  padding:3%;
+  margin: 5%;
+  border-radius: 15px;
+}
+.item:hover{
+  background-color: #97aabd;
+}
+
+
