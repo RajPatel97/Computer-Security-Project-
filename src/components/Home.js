@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import '../assets/css/Home.css'
+import sendText from '../SMS'
 
 //in this component:
 //text will be sent to primary number
@@ -10,6 +11,12 @@ const Home = () => {
 
     useEffect(()=>{
         //call a function that will fire a text to a number. this function will only run on first render of the application
+        //ref: https://support.messagemedia.com/articles/49973-send-a-text-message-with-javascript-in-under-2-minutes
+        
+        //retrive primary number from the database and then fire the text at the number
+        let number =0;//defaulted for testing 
+        sendText(number);
+
     },[])
 
     return ( 
