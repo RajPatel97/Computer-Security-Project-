@@ -15,7 +15,7 @@ const Home = () => {
         
         //retrive primary number from the database and then fire the text at the number
         let number =0;//defaulted for testing 
-        sendText(number);
+        //sendText(number);
 
     },[])
 
