@@ -13,11 +13,14 @@ const Home = () => {
         //call a function that will fire a text to a number. this function will only run on first render of the application
         //ref: https://support.messagemedia.com/articles/49973-send-a-text-message-with-javascript-in-under-2-minutes
         
-        //retrive primary number from the database and then fire the text at the number
+        //retrieve primary number from the database and then fire the text at the number
+        //change the database to mongo bd. cloud database is more secure than a local JSON file. 
+        //then log the time and data to the log.. do this by calling (and creating) the LOG.js file and the primary function. the data and time will be retrieved in the file
+
         let number =0;//defaulted for testing 
         //sendText(number);
 
-    },[])
+    },[]);
 
     return ( 
         <div className="home">
