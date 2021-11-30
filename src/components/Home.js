@@ -21,7 +21,7 @@ const Home = () => {
         //then log the time and data to the log.. do this by calling (and creating) the LOG.js file and the primary function. the data and time will be retrieved in the file
         logDateTime();
         let number =0;//defaulted for testing
-        sendText(number);
+        //sendText(number);
 
 
     },[]);
