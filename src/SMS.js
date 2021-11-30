@@ -1,12 +1,12 @@
 const lib = require('messagemedia-messages-sdk');
 
-
 const sendText = (number)=>{
-   /* Basic Auth 
+   /* Basic Auth
     [Security Final 2 ]
 api_key    = u9G26YXuYElUFHgg0glS
 api_secret = 6Fb690rQ4ty99VyFwyvzOesUG18K1N
 */
+
 lib.Configuration.basicAuthUserName = "u9G26YXuYElUFHgg0glS";
 lib.Configuration.basicAuthPassword = "6Fb690rQ4ty99VyFwyvzOesUG18K1N";
 
@@ -39,6 +39,6 @@ controller.sendMessages(body, function(error, response, context) {
     }
 });
 
-}//function 
+}//function
 
 export default sendText;
