@@ -6,13 +6,14 @@ import Home from './Home'
 import Log from './Log';
 import PhoneNumber from './PhoneNumber'
 import Settings from './Settings';
-
+import test from '../write';
 
 function App() {
+
   return (
     <Router>
     <div>
-
+      {test()}
         {/* adding "exact to this tag will result in start up bug  " */}
         <Route  path = "/">
         {window.location.pathname.includes('index.html') && <Redirect exact to="/" />}
