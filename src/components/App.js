@@ -13,25 +13,23 @@ function App() {
     <Router>
     <div>
 
-
-        <Route exact path = "/">
+        {/* adding "exact to this tag will result in start up bug  " */}
+        <Route  path = "/">
         {window.location.pathname.includes('index.html') && <Redirect exact to="/" />}
         <Header/>
           <Home/>
           <PhoneNumber/>
         </Route>
 
-        <Route path = '/Log'>
+        <Route exact path = '/Log'>
         {/* this is how to detect a path is electron ... i think */}
         {window.location.pathname.includes('index.html') && <Redirect to="/Log" />}
-        <Header/>
         <Log/>
         </Route>
 
 
-        <Route  path = "/Settings">
+        <Route exact path = "/Settings">
         {window.location.pathname.includes('index.html') && <Redirect to="/Settings" />}
-        <Header/>
           <Settings/>
         </Route>
 
