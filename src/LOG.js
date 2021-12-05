@@ -1,18 +1,28 @@
+import db from './firebase';
+//import { collection, getDocs,doc } from "firebase/firestore"; 
+import { doc, updateDoc } from "firebase/firestore";
+
+
+const docRef2 = doc(db, "Phone-Number", "EjkMBhVdDePwqzaijoJN");//ref to log in collection
+
+function getRandomIntInclusive(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
 
 
 const logDateTime = () =>{
-  //getting the date here
-  console.log('hello from LOG.js')
   let today = new Date();
   let date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
   let time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-  let dateTime = date+' '+time;
+  let dateTime = 'DATE: '+date+' TIME: '+time;
+  let key = getRandomIntInclusive(100000,99999999);//creating random key for database field
 
-  //now call a func that adds the date and time to the database
-
-  console.log(dateTime);//remove this later
-
-
+  let docData  = {//this is how to make a variable the key in an object []
+    [key]:dateTime
+  }
+  updateDoc(docRef2,docData);//changes the value and field with dataDoc
 }
 
  export default logDateTime;

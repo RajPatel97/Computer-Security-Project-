@@ -42,12 +42,7 @@ function App() {
     console.log("Error getting document:", error);
   });
 
-//this is how to write to the field
-  let docData  = {
-    willing:'this'
-  }
-  updateDoc(docRef2,docData);//changes the value and field with dataDoc
-
+  //logDateTime();
 
 
   return (

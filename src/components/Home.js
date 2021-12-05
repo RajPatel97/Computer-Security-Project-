@@ -2,6 +2,8 @@ import React, { useEffect } from 'react'
 import '../assets/css/Home.css'
 import logDateTime from '../LOG';
 import sendText from '../SMS'
+import db from '../firebase';
+import { doc, getDoc, setDoc,updateDoc } from "firebase/firestore";
 
 //in this component:
 //text will be sent to primary number
@@ -9,6 +11,18 @@ import sendText from '../SMS'
 //will be asked for 2 factor authentication if it is enabled in the settings
 
 const Home = () => {
+    const docRef = doc(db, "Phone-Number", "meTu9WqdUFsj8jHbC7ca");//this is grabbing the phone number from the database
+    const docSnap =  getDoc(docRef).then((doc) => {
+        if (doc.exists) {
+            let data = doc.data();
+            console.log(data);//making a ref to the data
+        } else {
+         // doc.data() will be undefined in this case
+         console.log("No such document!");
+        }
+    }).catch((error) => {
+        console.log("Error getting document:", error);
+    });
 
 
 
