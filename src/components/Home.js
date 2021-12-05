@@ -3,7 +3,7 @@ import '../assets/css/Home.css'
 import logDateTime from '../LOG';
 import sendText from '../SMS'
 import db from '../firebase';
-import { doc, getDoc, setDoc,updateDoc } from "firebase/firestore";
+import { doc, getDoc} from "firebase/firestore";
 
 //in this component:
 //text will be sent to primary number
@@ -15,7 +15,7 @@ const Home = () => {
     const docSnap =  getDoc(docRef).then((doc) => {
         if (doc.exists) {
             let data = doc.data();
-            console.log(data);//making a ref to the data
+            console.log(data['Primary Number']);//making a ref to the data
         } else {
          // doc.data() will be undefined in this case
          console.log("No such document!");
