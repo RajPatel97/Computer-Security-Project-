@@ -29,6 +29,25 @@ function App() {
     console.log("Error getting document:", error);
   });
 
+  const docRef2 = doc(db, "Phone-Number", "EjkMBhVdDePwqzaijoJN");
+  const docSnap2 =  getDoc(docRef2).then((doc) => {
+    if (doc.exists) {
+        let data = doc.data();
+        console.log(data);//making a ref to the data
+        
+        
+    } else {
+        // doc.data() will be undefined in this case
+        console.log("No such document!");
+    }
+  }).catch((error) => {
+    console.log("Error getting document:", error);
+  });
+
+
+
+
+
 
 
   return (
