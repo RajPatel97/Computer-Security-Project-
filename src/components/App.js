@@ -14,33 +14,33 @@ import { doc, getDoc, setDoc,updateDoc } from "firebase/firestore";
 
 function App() {
 
-  const docRef = doc(db, "Phone-Number", "meTu9WqdUFsj8jHbC7ca");
-  const docSnap =  getDoc(docRef).then((doc) => {
-    if (doc.exists) {
-        let data = doc.data();
-        console.log(data);//making a ref to the data
+  // const docRef = doc(db, "Phone-Number", "meTu9WqdUFsj8jHbC7ca");
+  // const docSnap =  getDoc(docRef).then((doc) => {
+  //   if (doc.exists) {
+  //       let data = doc.data();
+  //       console.log(data);//making a ref to the data
         
         
-    } else {
-        // doc.data() will be undefined in this case
-        console.log("No such document!");
-    }
-  }).catch((error) => {
-    console.log("Error getting document:", error);
-  });
+  //   } else {
+  //       // doc.data() will be undefined in this case
+  //       console.log("No such document!");
+  //   }
+  // }).catch((error) => {
+  //   console.log("Error getting document:", error);
+  // });
 
-  const docRef2 = doc(db, "Phone-Number", "EjkMBhVdDePwqzaijoJN");
-  const docSnap2 =  getDoc(docRef2).then((doc) => {
-    if (doc.exists) {
-        let data = doc.data();
-        console.log(data);//making a ref to the data
-    } else {
-        // doc.data() will be undefined in this case
-        console.log("No such document!");
-    }
-  }).catch((error) => {
-    console.log("Error getting document:", error);
-  });
+  // const docRef2 = doc(db, "Phone-Number", "EjkMBhVdDePwqzaijoJN");
+  // const docSnap2 =  getDoc(docRef2).then((doc) => {
+  //   if (doc.exists) {
+  //       let data = doc.data();
+  //       console.log(data);//making a ref to the data
+  //   } else {
+  //       // doc.data() will be undefined in this case
+  //       console.log("No such document!");
+  //   }
+  // }).catch((error) => {
+  //   console.log("Error getting document:", error);
+  // });
 
   //logDateTime();
 
