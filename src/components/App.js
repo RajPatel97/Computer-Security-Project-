@@ -9,7 +9,7 @@ import Settings from './Settings';
 import test from '../write';
 import db from '../firebase';
 //import { collection, getDocs,doc } from "firebase/firestore"; 
-import { doc, getDoc } from "firebase/firestore";
+import { doc, getDoc, setDoc,updateDoc } from "firebase/firestore";
 
 
 function App() {
@@ -34,8 +34,6 @@ function App() {
     if (doc.exists) {
         let data = doc.data();
         console.log(data);//making a ref to the data
-        
-        
     } else {
         // doc.data() will be undefined in this case
         console.log("No such document!");
@@ -44,9 +42,11 @@ function App() {
     console.log("Error getting document:", error);
   });
 
-
-
-
+//this is how to write to the field
+  let docData  = {
+    willing:'this'
+  }
+  updateDoc(docRef2,docData);//changes the value and field with dataDoc
 
 
 
