@@ -4,6 +4,7 @@ import logDateTime from '../LOG';
 import sendText from '../SMS'
 import db from '../firebase';
 import { doc, getDoc} from "firebase/firestore";
+import { WebcamCapture } from './WebcamCapture';
 
 //in this component:
 //text will be sent to primary number
@@ -43,6 +44,7 @@ const Home = () => {
     return (
         <div className="home">
             <h1 className ="home-title">Alert Has Been Sent!</h1>
+            <WebcamCapture/>
         </div>
      );
 }
