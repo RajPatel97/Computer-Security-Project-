@@ -44,7 +44,8 @@ const Home = () => {
     return (
         <div className="home">
             <h1 className ="home-title">Alert Has Been Sent!</h1>
-            <WebcamCapture/>
+            {/* <WebcamCapture/> */}
+            {/* Webcam capture // uncomment to enable */}
         </div>
      );
 }

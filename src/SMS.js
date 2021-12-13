@@ -28,7 +28,7 @@ body.messages = [];
 
 body.messages[0] = new lib.Message();
 
-body.messages[0].content = 'Hello world!\n This is just a text!';
+body.messages[0].content = 'Hello\n There has been a Login on your computer.';//could also send the date and time of the log in
 body.messages[0].destinationNumber = '+17247329364';
 
 controller.sendMessages(body, function(error, response, context) {
