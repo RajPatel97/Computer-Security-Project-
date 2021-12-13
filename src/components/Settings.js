@@ -1,4 +1,5 @@
 import React from 'react'
+import PhoneNumber from './PhoneNumber'
 
 const Settings = () => {
   return (

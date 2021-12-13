@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import '../assets/css/PhoneNumber.css'
+import db from '../firebase';
+import { doc, setDoc } from "firebase/firestore"; 
 
 const PhoneNumber = () => {
     let [value,setValue] = useState('');//used to store the phone number entered
@@ -15,6 +17,10 @@ const PhoneNumber = () => {
         e.preventDefault();//preventing the page from reloading
         console.log(value);
         //add number to database here
+        setDoc(doc(db, "Phone-Number", "meTu9WqdUFsj8jHbC7ca"), {
+            'Primary Number': "+1"+value
+          });
+
         alert('Number has been added to the database');
     }
 

@@ -54,7 +54,6 @@ function App() {
         {window.location.pathname.includes('index.html') && <Redirect exact to="/" />}
         <Header/>
           <Home/>
-          <PhoneNumber/>
         </Route>
 
         <Route exact path = '/Log'>
@@ -67,6 +66,7 @@ function App() {
         <Route exact path = "/Settings">
         {window.location.pathname.includes('index.html') && <Redirect to="/Settings" />}
           <Settings/>
+          <PhoneNumber/>
         </Route>
 
 
