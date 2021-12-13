@@ -7,6 +7,20 @@ const url = require('url')
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
+
+//auto launch feature
+var AutoLaunch = require('auto-launch');
+var autoLauncher = new AutoLaunch({
+    name: "MyApp"
+});
+// Checking if autoLaunch is enabled, if not then enabling it.
+autoLauncher.isEnabled().then(function(isEnabled) {
+  if (isEnabled) return;
+   autoLauncher.enable();
+}).catch(function (err) {
+  throw err;
+});
+
 let mainWindow
 
 // Keep a reference for dev mode
@@ -74,15 +88,15 @@ function createWindow() {
     }
   })
 
-  
+
   // Emitted when the window is closed.
   mainWindow.on('closed', function() {
-    
+
     // Dereference the window object, usually you would store windows
     // in an array if your app supports multi windows, this is the time
     // when you should delete the corresponding element.
 
-    //createWindow() <--- this will cause the window to never completely quit 
+    //createWindow() <--- this will cause the window to never completely quit
     mainWindow = null
   })
 }

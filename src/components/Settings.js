@@ -4,7 +4,7 @@ import PhoneNumber from './PhoneNumber'
 const Settings = () => {
   return (
   <div className="Settings">
-    <h1>hello this is the Settings page</h1>
+    <h1>Settings: </h1>
   </div>
   );
 }

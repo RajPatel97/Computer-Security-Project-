@@ -41,7 +41,7 @@ useEffect(()=>{
 
   return (
   <div className="log">
-    <h1>hello this is the log page</h1>
+    <h1>Logs: </h1>
     {printLog(logs)}
     {info.map((items,index)=>{
       return <li key={index}>{items}</li>

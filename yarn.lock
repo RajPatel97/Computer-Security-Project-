@@ -1718,6 +1718,11 @@
     "micromatch" "^3.1.4"
     "normalize-path" "^2.1.1"
 
+"applescript@^1.0.0":
+  "integrity" "sha1-u4evVoytA0pOSMS9r2Bno6JwExc="
+  "resolved" "https://registry.npmjs.org/applescript/-/applescript-1.0.0.tgz"
+  "version" "1.0.0"
+
 "arr-diff@^4.0.0":
   "integrity" "sha1-1kYQdP6/7HHn4VI1dhoyml3HxSA="
   "resolved" "https://registry.npmjs.org/arr-diff/-/arr-diff-4.0.0.tgz"
@@ -1825,6 +1830,17 @@
   "integrity" "sha1-0IiFvmubv5Q5/gh8dihyRfCoFFA="
   "resolved" "https://registry.npmjs.org/author-regex/-/author-regex-1.0.0.tgz"
   "version" "1.0.0"
+
+"auto-launch@^5.0.5":
+  "integrity" "sha512-ppdF4mihhYzMYLuCcx9H/c5TUOCev8uM7en53zWVQhyYAJrurd2bFZx3qQVeJKF2jrc7rsPRNN5cD+i23l6PdA=="
+  "resolved" "https://registry.npmjs.org/auto-launch/-/auto-launch-5.0.5.tgz"
+  "version" "5.0.5"
+  dependencies:
+    "applescript" "^1.0.0"
+    "mkdirp" "^0.5.1"
+    "path-is-absolute" "^1.0.0"
+    "untildify" "^3.0.2"
+    "winreg" "1.2.4"
 
 "autoprefixer@^9.6.1":
   "integrity" "sha512-XrvP4VVHdRBCdX1S3WXVD8+RyG9qeb1D5Sn1DeLiG2xfSpzellk5k54xbUERJ3M5DggQxes39UGOTP8CFrEGbg=="
@@ -6955,6 +6971,11 @@
     "has-value" "^0.3.1"
     "isobject" "^3.0.0"
 
+"untildify@^3.0.2":
+  "integrity" "sha512-iSk/J8efr8uPT/Z4eSUywnqyrQU7DSdMfdqK4iWEaUVVmcP5JcnpRqmVMwcwcnmI1ATFNgC5V90u09tBynNFKA=="
+  "resolved" "https://registry.npmjs.org/untildify/-/untildify-3.0.3.tgz"
+  "version" "3.0.3"
+
 "unzip-crx-3@^0.2.0":
   "integrity" "sha512-0+JiUq/z7faJ6oifVB5nSwt589v1KCduqIJupNVDoWSXZtWDmjDGO3RAEOvwJ07w90aoXoP4enKsR7ecMrJtWQ=="
   "resolved" "https://registry.npmjs.org/unzip-crx-3/-/unzip-crx-3-0.2.0.tgz"
@@ -7251,6 +7272,11 @@
   "integrity" "sha512-JcKqAHLPxcdb9KM49dufGXn2x3ssnfjbcaQdLlfZsL9rH9wgDQjUtDxbo8NE0F6SFvydeu1VhZe7hZuHsB2/pw=="
   "resolved" "https://registry.npmjs.org/wildcard/-/wildcard-2.0.0.tgz"
   "version" "2.0.0"
+
+"winreg@1.2.4":
+  "integrity" "sha1-ugZWKbepJRMOFXeRCM9UCZDpjRs="
+  "resolved" "https://registry.npmjs.org/winreg/-/winreg-1.2.4.tgz"
+  "version" "1.2.4"
 
 "wrap-ansi@^5.1.0":
   "integrity" "sha512-QC1/iN/2/RPVJ5jYK8BGttj5z83LmSKmvbvrXPNCLZSEb32KKVDJDl/MOt2N01qU2H/FkzEa9PKto1BqDjtd7Q=="
