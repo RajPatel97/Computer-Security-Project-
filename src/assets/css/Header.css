@@ -1,10 +1,10 @@
 .header{
   display: grid;
   grid-template-rows: auto auto;
-  background-color: #314455;
+  background-color: #d89090;
   margin:0;
   border-style: solid;
-  border-color: #97aabd;
+  border-color: #b997bd;
 }
 
 .title{

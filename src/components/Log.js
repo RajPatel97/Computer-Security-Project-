@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import db from '../firebase';
 import { doc, getDoc, setDoc,updateDoc } from "firebase/firestore";
+import '../assets/css/Log.css'
 
 const Log = () => {
 const info = [];
@@ -25,9 +26,9 @@ const initData =()=>{
   const printLog =(data)=>{
     for (const property in data) {
       //console.log(`${property}: ${data[property]}`);
-      info.push(`${property}: ${data[property]}`)
+      info.push(`${data[property]}`)
     }
-    info.reverse()
+    info.sort()
   }
 
 useEffect(()=>{
@@ -36,15 +37,12 @@ useEffect(()=>{
 
 
 
-
-
-
   return (
   <div className="log">
     <h1>Logs: </h1>
     {printLog(logs)}
     {info.map((items,index)=>{
-      return <li key={index}>{items}</li>
+      return <li className='log-item' key={index}>{items}</li>
     })}
   </div>
   );

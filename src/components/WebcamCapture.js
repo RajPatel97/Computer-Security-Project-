@@ -36,6 +36,7 @@ const [image,setImage]=useState('');
           width={220}
         videoConstraints={videoConstraints}
         />:<img src={image}/>}
+
       <button onClick={(e)=>{e.preventDefault();capture();}}>
       Capture</button>
     </div>

@@ -3,7 +3,7 @@
   /* Light theme */
   body{
     color: #fff;
-    background-color: #314455;
+    /* background-color: #314455; */
   }
 }
 
@@ -11,7 +11,7 @@
   /* Dark theme */
   body {
     color: #fff;
-    background-color: #314455;
+    background-color: #e66465;
   }
 }
 
