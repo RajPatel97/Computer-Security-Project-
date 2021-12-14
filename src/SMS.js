@@ -6,6 +6,7 @@ const sendText = (number)=>{
 api_key    = u9G26YXuYElUFHgg0glS
 api_secret = 6Fb690rQ4ty99VyFwyvzOesUG18K1N
 */
+console.log(number);
 
 lib.Configuration.basicAuthUserName = "u9G26YXuYElUFHgg0glS";
 lib.Configuration.basicAuthPassword = "6Fb690rQ4ty99VyFwyvzOesUG18K1N";
@@ -29,7 +30,7 @@ body.messages = [];
 body.messages[0] = new lib.Message();
 
 body.messages[0].content = 'Hello\n There has been a Login on your computer.';//could also send the date and time of the log in
-body.messages[0].destinationNumber = '+17247329364';
+body.messages[0].destinationNumber = '+17247329364';//body.messages[0].destinationNumber = number;
 
 controller.sendMessages(body, function(error, response, context) {
     if (error) {
