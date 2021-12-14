@@ -1,5 +1,4 @@
 import db from './firebase';
-//import { collection, getDocs,doc } from "firebase/firestore"; 
 import { doc, updateDoc } from "firebase/firestore";
 
 

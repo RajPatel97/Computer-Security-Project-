@@ -14,7 +14,8 @@ let number;
 const Home = () => {
 
     useEffect(()=>{
-
+      //retrieve primary number from the database and then fire the text at the number
+        //then log the time and data to the log.. do this by calling (and creating) the LOG.js file and the primary function. the data and time will be retrieved in the file
         const docRef = doc(db, "Phone-Number", "meTu9WqdUFsj8jHbC7ca");//this is grabbing the phone number from the database
         const docSnap =  getDoc(docRef).then((doc) => {
         if (doc.exists) {
@@ -29,10 +30,7 @@ const Home = () => {
             console.log("Error getting document:", error);
         });
 
-        //retrieve primary number from the database and then fire the text at the number
-        //then log the time and data to the log.. do this by calling (and creating) the LOG.js file and the primary function. the data and time will be retrieved in the file
         logDateTime();
-        // sendText(number);
 
 
     },[]);
