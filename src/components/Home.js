@@ -9,25 +9,9 @@ import { WebcamCapture } from './WebcamCapture';
 //in this component:
 //text will be sent to primary number
 //log in time and day will be added to the database
-//will be asked for 2 factor authentication if it is enabled in the settings
 let number;
 
 const Home = () => {
-    // const docRef = doc(db, "Phone-Number", "meTu9WqdUFsj8jHbC7ca");//this is grabbing the phone number from the database
-    // const docSnap =  getDoc(docRef).then((doc) => {
-    //     if (doc.exists) {
-    //         let data = doc.data();
-    //         //console.log(data['Primary Number']);//making a ref to the data
-    //         number = data['Primary Number']
-    //     } else {
-    //      // doc.data() will be undefined in this case
-    //      console.log("No such document!");
-    //     }
-    // }).catch((error) => {
-    //     console.log("Error getting document:", error);
-    // });
-
-
 
     useEffect(()=>{
 
