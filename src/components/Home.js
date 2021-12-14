@@ -36,8 +36,7 @@ const Home = () => {
         if (doc.exists) {
             let data = doc.data();
             //console.log(data['Primary Number']);//making a ref to the data
-            number = 
-            sendText(data['Primary Number']);
+            //sendText(data['Primary Number']);//uncomment this to enable sending messages
         } else {
          // doc.data() will be undefined in this case
          console.log("No such document!");

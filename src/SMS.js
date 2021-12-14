@@ -8,8 +8,8 @@ api_secret = 6Fb690rQ4ty99VyFwyvzOesUG18K1N
 */
 console.log(number);
 
-lib.Configuration.basicAuthUserName = "u9G26YXuYElUFHgg0glS";
-lib.Configuration.basicAuthPassword = "6Fb690rQ4ty99VyFwyvzOesUG18K1N";
+lib.Configuration.basicAuthUserName = "WHI23T1b0WxQjMnuGR7A";
+lib.Configuration.basicAuthPassword = "IUAbxqex9eOOj8EhrHL8ernfT9hLgO";
 
 /* HMAC
 [Security Final ]
@@ -17,8 +17,8 @@ api_key    = MkNqBcrjJ13pLUHx0Zh3
 api_secret = w8wUPanJ8xRVi1gjeXEF9wpxj5X8JQ
 */
 
-lib.Configuration.hmacAuthUserName = "MkNqBcrjJ13pLUHx0Zh3";
-lib.Configuration.hmacAuthPassword = "w8wUPanJ8xRVi1gjeXEF9wpxj5X8JQ";
+lib.Configuration.hmacAuthUserName = "Xh69lb65lokmZbGG82Mn";
+lib.Configuration.hmacAuthPassword = "kOxWHjZkAJs9imLeMrPTUsTImEK4lD";
 
 
 var controller = lib.MessagesController;
@@ -30,7 +30,7 @@ body.messages = [];
 body.messages[0] = new lib.Message();
 
 body.messages[0].content = 'Hello\n There has been a Login on your computer.';//could also send the date and time of the log in
-body.messages[0].destinationNumber = '+17247329364';//body.messages[0].destinationNumber = number;
+body.messages[0].destinationNumber = number;
 
 controller.sendMessages(body, function(error, response, context) {
     if (error) {
